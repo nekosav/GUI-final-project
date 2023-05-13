@@ -4,19 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Добавил правила игры">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/dirt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/ground_square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/playground_square_version2.png" afterDir="false" />
+    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты.">
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Free Cow Sprites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Color pallete/Color pallete in aseprite - screenshot.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Color pallete/Sprout Lands - color pallete.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Furniture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic tools and meterials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Chest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Paths.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Simple Milk and grass item.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Grass hill tiles v.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Grass tiles v.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Tall Grass hill tiles v.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Hills.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Tilled Dirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/read_me.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brick_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brown_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/glass_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/pixil-frame-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/stone_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/wheat_cube.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,9 +76,17 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -50,6 +99,12 @@
       <updated>1683141367493</updated>
       <workItem from="1683141368734" duration="2289000" />
       <workItem from="1683628468144" duration="11456000" />
+      <workItem from="1683735691483" duration="8917000" />
+      <workItem from="1683801037698" duration="7355000" />
+      <workItem from="1683833294008" duration="5109000" />
+      <workItem from="1683841468123" duration="615000" />
+      <workItem from="1683909764906" duration="8599000" />
+      <workItem from="1683920914299" duration="5603000" />
     </task>
     <task id="LOCAL-00001" summary="starting a project">
       <created>1683141567955</created>
@@ -65,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683141876713</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты.">
+      <created>1683736064877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683736064877</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,17 +148,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="starting a project" />
     <MESSAGE value="Добавил правила игры" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил правила игры" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ClassCastException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты." />
+    <option name="LAST_COMMIT_MESSAGE" value="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GUI_final_project$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1683644532189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

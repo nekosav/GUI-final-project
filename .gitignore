@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+## не думаю, что это нужно на гите
+/free_assets
