@@ -4,48 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты.">
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Free Cow Sprites.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Characters/Tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Color pallete/Color pallete in aseprite - screenshot.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Color pallete/Sprout Lands - color pallete.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Furniture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic tools and meterials.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Chest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Paths.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Simple Milk and grass item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Grass hill tiles v.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Grass tiles v.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Tall Grass hill tiles v.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Hills.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Tilled Dirt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_assets/Sprout Lands - Sprites - Basic pack/read_me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Building.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brick_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brown_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/glass_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/pixil-frame-0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/stone_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/wheat_cube.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeDuco-0W11o.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeMara-ALgqA.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromePlat-4BYY6.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromePlyshum-owppA.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeRubigo-gxee5.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeSabulo-X3MMa.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeSantax-L3GGG.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeScobis-PKll2.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeZinc-Wyrr4.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/big-shot.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/font2.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/misc/OHG Standard Free for Personal Use License .pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Grass hill tiles v.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/grid_pane_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resource_board (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/brick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/stone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/wheat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/wood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/brick_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/brown_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/glass_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/stone_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/wheat_cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tile_grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/brick_tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/glass_tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/stone_tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wheat_tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wood_tile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brick_cube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brown_cube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/glass_cube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/pixil-frame-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/stone_cube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/wheat_cube.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +106,8 @@
       <workItem from="1683833294008" duration="5109000" />
       <workItem from="1683841468123" duration="615000" />
       <workItem from="1683909764906" duration="8599000" />
-      <workItem from="1683920914299" duration="5603000" />
+      <workItem from="1683920914299" duration="11852000" />
+      <workItem from="1684096025904" duration="8245000" />
     </task>
     <task id="LOCAL-00001" summary="starting a project">
       <created>1683141567955</created>
@@ -127,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683736064877</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавил текстуры ресурсов, анимированный фон. Дописал логику раставления ресурсов на карте. Написал набросок класса здания с методом проверки">
+      <created>1683978742080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683978742081</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +159,8 @@
     <MESSAGE value="starting a project" />
     <MESSAGE value="Добавил правила игры" />
     <MESSAGE value="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты." />
-    <option name="LAST_COMMIT_MESSAGE" value="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты." />
+    <MESSAGE value="Добавил текстуры ресурсов, анимированный фон. Дописал логику раставления ресурсов на карте. Написал набросок класса здания с методом проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил текстуры ресурсов, анимированный фон. Дописал логику раставления ресурсов на карте. Написал набросок класса здания с методом проверки" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GUI_final_project$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1683644532189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

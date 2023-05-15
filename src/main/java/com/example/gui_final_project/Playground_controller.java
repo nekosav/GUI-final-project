@@ -3,11 +3,14 @@ package com.example.gui_final_project;
 import javafx.animation.AnimationTimer;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 import javafx.scene.layout.*;
+import javafx.scene.text.Font;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.LinkedList;
 import java.util.Random;
@@ -24,10 +27,15 @@ public class Playground_controller  {
     private Pane background_pane;//основная Pane
     @FXML
     private Button block0, block1, block2;
+    @FXML
+    private Label label1,label2;
 
-    private int time = 0, counter =0, picked_res_num = -1,b_picked_num = -1; //счётчики и вспомогательные переменные
+
 
     private int[] b_res_num ={0,0,0}; //номер ресурса в кнопке
+    private int time = 0, counter =0, picked_res_num = -1,b_picked_num = -1; //счётчики и вспомогательные переменные
+
+    private final Font  customFont = Font.loadFont("file:src/main/resources/com/example/gui_final_project/font/big-shot.ttf",24);
 
     private Resources resources = new Resources();
     Random random = new Random();
@@ -41,6 +49,10 @@ public class Playground_controller  {
     @FXML
     public void initialize() throws FileNotFoundException {
 
+        if (!(customFont.equals(null) )){
+            label1.setFont(customFont);
+            label2.setFont(customFont);
+        }
         Set_buttons_params();
         Draw_playground();
         Set_background();
@@ -80,14 +92,14 @@ public class Playground_controller  {
         int column = GridPane.getColumnIndex(clickedNode);
 
         if ((picked_res_num>-1) & (resources.getRes_cords()[row][column] == -1)){ //проверяем выбран ли ресурс и свободна ли клетка
-            resource_cube.setImage(resources.getResources_options()[picked_res_num]);
+            resource_cube.setImage(resources.getResources_tiles_options()[picked_res_num]);
             resources.setRes_cords(row,column,picked_res_num); // добавляем ресурс в карту ресурсов
             System.out.println("Вы поставили ресурс:" + resources.getRes_cords()[row][column]);
             b_res_num[b_picked_num] = resources.getFirstResource();
             switch (b_picked_num){
                 case 0: block0.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[0]]));
                 case 1: block1.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[1]]));
-                case 3: block2.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[2]]));
+                case 2: block2.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[2]]));
             }
             picked_res.setImage(resources.getResources_options()[b_res_num[b_picked_num]]);
 
@@ -108,13 +120,12 @@ public class Playground_controller  {
                 Pane cell_pane = new Pane();
 
                 ImageView resource_cube = new ImageView();
-                resource_cube.setFitHeight(50);
-                resource_cube.setFitWidth(50);
+                resource_cube.setFitHeight(100);
+                resource_cube.setFitWidth(100);
 
                 cell_pane.getChildren().add(resource_cube);
 
-                resource_cube.setLayoutY(25);
-                resource_cube.setLayoutX(25);
+
                 resource_cube.setVisible(false);
 
                 cell_pane.setOnMouseClicked(this::place_resource);
@@ -130,6 +141,9 @@ public class Playground_controller  {
         block0.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[0]]));
         block1.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[1]]));
         block2.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[2]]));
+        b_picked_num= 0;
+        picked_res_num = b_res_num[0];
+        picked_res.setImage(resources.getResources_options()[b_res_num[0]]);
     }
 
     private void Set_background(){

@@ -9,17 +9,27 @@ import java.util.Collections;
 
 public class Resources {
 
-    private Image brown_cube = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/brown_cube.png")); //Номер ресурса: 0
-    private Image wheat_cube = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/wheat_cube.png")); //1
-    private Image brick_cube = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/brick_cube.png")); //2
-    private Image stone_cube = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/stone_cube.png")); //3
-    private Image glass_cube = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/glass_cube.png")); //4
+    private final Image wood = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/resources_new/wood.png")); //Номер ресурса: 0
+    private final  Image wheat = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/resources_new/wheat.png")); //1
+    private final  Image brick = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/resources_new/brick.png")); //2
+    private final  Image stone = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/resources_new/stone.png")); //3
+    private final  Image glass = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/resources_new/glass.png")); //4
 
-    private Image[] resources_options = {brown_cube, wheat_cube, brick_cube, stone_cube, glass_cube};
+    private final Image wood_tile = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/tiles_new/wood_tile.png")); //Номер тайла с ресурсом: 0
+    private final  Image wheat_tile = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/tiles_new/wheat_tile.png")); //1
+    private final  Image brick_tile = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/tiles_new/brick_tile.png")); //2
+    private final  Image stone_tile = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/tiles_new/stone_tile.png")); //3
+    private final  Image glass_tile = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/tiles_new/glass_tile.png")); //4
+
+    private final Image[] resources_options = {wood, wheat, brick, stone, glass};
+
+    private final Image[] resources_tiles_options = {wood_tile, wheat_tile, brick_tile, stone_tile, glass_tile};
 
     public Image[] getResources_options() {
         return resources_options;
     }
+
+    public Image[] getResources_tiles_options() {return resources_tiles_options;}
 
     private ArrayList<Integer> resources_deck = new ArrayList<>(); //колода ресурсов, из которой назначаются кнопки
 
@@ -47,6 +57,7 @@ public class Resources {
                 res_cords[i][j]=-1;
             }
         }
+
     }
 
     public int getFirstResource(){ //вытаскивание ресурса из колоды ресурсов
