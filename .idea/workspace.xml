@@ -4,50 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeDuco-0W11o.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeMara-ALgqA.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromePlat-4BYY6.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromePlyshum-owppA.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeRubigo-gxee5.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeSabulo-X3MMa.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeSantax-L3GGG.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeScobis-PKll2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeZinc-Wyrr4.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/big-shot.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/font2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/misc/OHG Standard Free for Personal Use License .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Grass hill tiles v.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/grid_pane_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resource_board (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/brick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/stone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/wheat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/wood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/brick_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/brown_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/glass_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/stone_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/wheat_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tile_grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/brick_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/glass_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/stone_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wheat_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wood_tile.png" afterDir="false" />
+    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Перенёс всё в полноэкранный режим. Сделал выбор ресурсов красивым: отрисовал доску для объявлений. Весь вечер мучался с шрифтом, и он всё таки начал отображаться">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brick_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brown_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/glass_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/pixil-frame-0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/stone_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/wheat_cube.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +44,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -107,7 +67,10 @@
       <workItem from="1683841468123" duration="615000" />
       <workItem from="1683909764906" duration="8599000" />
       <workItem from="1683920914299" duration="11852000" />
-      <workItem from="1684096025904" duration="8245000" />
+      <workItem from="1684096025904" duration="9133000" />
+      <workItem from="1684341947389" duration="861000" />
+      <workItem from="1684347572439" duration="4814000" />
+      <workItem from="1684400742223" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="starting a project">
       <created>1683141567955</created>
@@ -137,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683978742081</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Перенёс всё в полноэкранный режим. Сделал выбор ресурсов красивым: отрисовал доску для объявлений. Весь вечер мучался с шрифтом, и он всё таки начал отображаться">
+      <created>1684181140585</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684181140585</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +130,8 @@
     <MESSAGE value="Добавил правила игры" />
     <MESSAGE value="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты." />
     <MESSAGE value="Добавил текстуры ресурсов, анимированный фон. Дописал логику раставления ресурсов на карте. Написал набросок класса здания с методом проверки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил текстуры ресурсов, анимированный фон. Дописал логику раставления ресурсов на карте. Написал набросок класса здания с методом проверки" />
+    <MESSAGE value="Перенёс всё в полноэкранный режим. Сделал выбор ресурсов красивым: отрисовал доску для объявлений. Весь вечер мучался с шрифтом, и он всё таки начал отображаться" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перенёс всё в полноэкранный режим. Сделал выбор ресурсов красивым: отрисовал доску для объявлений. Весь вечер мучался с шрифтом, и он всё таки начал отображаться" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GUI_final_project$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1683644532189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
