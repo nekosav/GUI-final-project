@@ -37,9 +37,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/stone_tile.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wheat_tile.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wood_tile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brick_cube.png" beforeDir="false" />
@@ -62,6 +60,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="nekosav_personal" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
