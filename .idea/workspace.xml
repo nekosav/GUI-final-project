@@ -5,48 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeDuco-0W11o.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeMara-ALgqA.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromePlat-4BYY6.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromePlyshum-owppA.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeRubigo-gxee5.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeSabulo-X3MMa.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeSantax-L3GGG.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeScobis-PKll2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/MetrobotsChromeZinc-Wyrr4.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/big-shot.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/font2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/font/misc/OHG Standard Free for Personal Use License .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Grass hill tiles v.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/grid_pane_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resource_board (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/brick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/stone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/wheat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_new/wood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/brick_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/brown_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/glass_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/stone_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resources_old/wheat_cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tile_grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/brick_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/glass_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/stone_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wheat_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/tiles_new/wood_tile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brick_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/brown_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/glass_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/pixil-frame-0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/stone_cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/wheat_cube.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Ambar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cottage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Fountain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/NewBuilding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shelter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Temple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +40,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2PIOw0ZGcwgLe6Wam02FUHuBbj9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,22 +56,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="tiny_towns" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="tiny_towns" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,6 +105,7 @@
       <workItem from="1683909764906" duration="8599000" />
       <workItem from="1683920914299" duration="11852000" />
       <workItem from="1684096025904" duration="8245000" />
+      <workItem from="1684444640179" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="starting a project">
       <created>1683141567955</created>
