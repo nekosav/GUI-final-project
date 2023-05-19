@@ -27,9 +27,9 @@
             <Image url="@textures/wave_frame1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="200.0" fitWidth="800.0">
+      <ImageView fitHeight="500.0" fitWidth="800.0">
          <image>
-            <Image url="@textures/resource_board%20(2).png" />
+            <Image url="@textures/resource_board_2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="100.0" fitWidth="160.0" layoutX="90.0" layoutY="50.0">
@@ -42,7 +42,7 @@
             <Image url="@textures/label_background.png" />
          </image>
       </ImageView>
-      <GridPane fx:id="playground" layoutX="767.0" layoutY="490.0" minHeight="400.0" minWidth="400.0" pickOnBounds="false" prefHeight="400.0" prefWidth="400.0">
+      <GridPane fx:id="playground" layoutX="1181.0" layoutY="490.0" minHeight="400.0" minWidth="400.0" pickOnBounds="false" prefHeight="400.0" prefWidth="400.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
@@ -152,5 +152,35 @@
             <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="556.0" layoutY="286.0">
+         <image>
+            <Image url="@textures/buildings/fountain.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="456.0" layoutY="286.0">
+         <image>
+            <Image url="@textures/buildings/cottage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="356.0" layoutY="286.0">
+         <image>
+            <Image url="@textures/buildings/ambar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="256.0" layoutY="286.0">
+         <image>
+            <Image url="@textures/buildings/temple.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="156.0" layoutY="286.0">
+         <image>
+            <Image url="@textures/buildings/shop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="56.0" layoutY="286.0">
+         <image>
+            <Image url="@textures/buildings/shelter.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
