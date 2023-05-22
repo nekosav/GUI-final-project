@@ -9,4 +9,13 @@ public class Cell { //проходной вспомогательный клас
         this.x = x;
         this.y = y;
     }
+
+    @Override
+    public String toString() {
+        return "Cell{" +
+                "color=" + color +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

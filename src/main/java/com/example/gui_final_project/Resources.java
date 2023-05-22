@@ -21,6 +21,8 @@ public class Resources {
     private final  Image stone_tile = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/tiles_new/stone_tile.png")); //3
     private final  Image glass_tile = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/tiles_new/glass_tile.png")); //4
 
+
+
     private final Image[] resources_options = {wood, wheat, brick, stone, glass};
 
     private final Image[] resources_tiles_options = {wood_tile, wheat_tile, brick_tile, stone_tile, glass_tile};

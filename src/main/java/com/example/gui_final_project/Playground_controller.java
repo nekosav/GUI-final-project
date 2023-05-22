@@ -14,7 +14,9 @@ import javafx.scene.text.Font;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 
 public class Playground_controller  {
@@ -31,17 +33,26 @@ public class Playground_controller  {
     private Button block0, block1, block2;
     @FXML
     private Label label1,label2;
+    @FXML
+    private ImageView bank_view, ambar_view, cottage_view, shelter_view, fountain_view, shop_view, temple_view;
 
 
+    private ArrayList<ImageView> building_pickers = new ArrayList<>();
+    private ArrayList<NewBuilding> buildings = new ArrayList<>();
 
     private int[] b_res_num ={0,0,0}; //номер ресурса в кнопке
 
-    private int[][] selected_tiles_cords = {{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    //private int[][] selected_tiles_cords = {{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    private ArrayList<Cell> selected_tiles_cord = new ArrayList<>();
     private int time = 0, counter =0, picked_res_num = -1,b_picked_num = -1; //счётчики и вспомогательные переменные
 
     private final Font  customFont = Font.loadFont("file:src/main/resources/com/example/gui_final_project/font/big-shot.ttf",24);
 
     private final Image selected_tile_image = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/selected_tile.png"));
+
+
+
+
 
 
 
@@ -61,12 +72,13 @@ public class Playground_controller  {
             label1.setFont(customFont);
             label2.setFont(customFont);
         }
-        background_pane.setOnMouseClicked(this::unselect_all_tiles);
+        background_pane.setOnMouseClicked(this::unselect_all_tiles_pane);
 
         Set_buttons_params();
         Draw_playground();
         Set_background();
-
+        building_pickers.addAll(List.of(ambar_view, bank_view, cottage_view, fountain_view, shelter_view, shop_view, temple_view));
+        buildings.addAll(List.of(new Ambar(),new Bank(), new Cottage(), new Fountain(), new Shelter(), new Shop(), new Temple()));
     }
 
     @FXML
@@ -88,10 +100,36 @@ public class Playground_controller  {
     }
 
     @FXML
-    public void click_square(MouseEvent mouseEvent){
+    public void click_building_picker(MouseEvent mouseEvent){
+        ImageView res_picker = (ImageView) mouseEvent.getSource();
 
+        for (ImageView image : building_pickers){
+
+            if (res_picker == image){
+                int building_num = building_pickers.indexOf(image);
+                if (buildings.get(building_num).compareGraph(selected_tiles_cord)) {
+                    System.out.println("Ебать дом, ахуеть");
+                    Pane cell_pane = getPaneByCell(selected_tiles_cord.get(0).x, selected_tiles_cord.get(0).y );
+                    ImageView resource_cube = (ImageView) cell_pane.getChildren().get(0);
+                    resource_cube.setImage(buildings.get(building_num).getBuilding_image());
+                    resources.getRes_cords()[selected_tiles_cord.get(0).x][selected_tiles_cord.get(0).y] = buildings.get(building_num).getRes_id();
+                    ImageView selected_res_cub = (ImageView) cell_pane.getChildren().get(1);
+                    selected_res_cub.setVisible(false);
+                    selected_tiles_cord.remove(0);
+                    for (int i=0; i<selected_tiles_cord.size(); i++){
+                        Pane temp_pane = getPaneByCell(selected_tiles_cord.get(i).x,selected_tiles_cord.get(i).y);
+                        ImageView temp_res = (ImageView) temp_pane.getChildren().get(0);
+                        temp_res.setVisible(false);
+                        resources.getRes_cords()[selected_tiles_cord.get(i).x][selected_tiles_cord.get(i).y] = -1;
+                    }
+
+                }
+            }
+
+        }
 
     }
+
 
 
     public void place_resource(MouseEvent mouseEvent){ //расстановка ресурсов на поле
@@ -123,10 +161,22 @@ public class Playground_controller  {
 
             }
             resource_cube.setVisible(true);
+            unselect();
+
+
         }
         else if (mouseEvent.getButton() == MouseButton.SECONDARY){
-            selected_tiles_cords[row][column] = 1;
-            selected_tile.setVisible(true);
+            Cell cell = new Cell(resources.getRes_cords()[row][column], row, column);
+            boolean flag = true;
+            for (Cell temp_cell : selected_tiles_cord){
+                if ((cell.x ==temp_cell.x)&(cell.y == temp_cell.y)){
+                    flag = false;
+                }
+            }
+            if (flag) {
+                selected_tiles_cord.add(cell);
+                selected_tile.setVisible(true);
+            }
         }
     }
 
@@ -186,7 +236,7 @@ public class Playground_controller  {
                     waves.get(counter).setVisible(false);
                     counter = (counter +1) % 4;
                     waves.get(counter).setVisible(true);
-                    //System.out.println(counter);
+
                 }
 
 
@@ -205,24 +255,27 @@ public class Playground_controller  {
         return null;
     }
 
-    private void unselect_all_tiles(MouseEvent mouseEvent){
+    private void unselect_all_tiles_pane(MouseEvent mouseEvent){
         if (!((mouseEvent.getX() >= playground.getLayoutX() ) &(mouseEvent.getX() <= playground.getLayoutX() +playground.getWidth()) &
-                (mouseEvent.getY() >= playground.getLayoutY() ) &(mouseEvent.getY() <= playground.getLayoutY() +playground.getHeight()))){
+                (mouseEvent.getY() >= playground.getLayoutY() ) &(mouseEvent.getY() <= playground.getLayoutY() +playground.getHeight())
+        & (mouseEvent.getX()>800))){
 
-            for (int i = 0; i < 4; i++) {
-                for (int j = 0; j < 4; j++) {
-                    selected_tiles_cords[i][j] = 0;
-                    Pane cell_pane = getPaneByCell(i, j);
-                    ImageView selected_tile = (ImageView) cell_pane.getChildren().get(1);
-                    selected_tile.setVisible(false);
-                }
-            }
-
+            unselect();
         }
-        System.out.println("Координаты мыши: х = "+ mouseEvent.getX()+"; y = "+mouseEvent.getY());
-        System.out.println("Координаты левой вершины: х = "+ playground.getLayoutX()+"; y = "+playground.getLayoutY());
-        System.out.println("Координаты правой вершины: х = "+ playground.getLayoutX()+playground.getWidth()+"; y = "+playground.getLayoutY()+playground.getHeight());
 
+
+    }
+    public void unselect(){
+            for (Cell cell : selected_tiles_cord) {
+
+                Pane cell_pane_1 = getPaneByCell(cell.x, cell.y);
+                ImageView selected_tile_1 = (ImageView) cell_pane_1.getChildren().get(1);
+                selected_tile_1.setVisible(false);
+
+            }
+            while (selected_tiles_cord.size()>0){
+                selected_tiles_cord.remove(0);
+            }
     }
 
 

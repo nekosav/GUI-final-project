@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Добавил Никитины классы домиков">
+    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Больше текстурой домиков">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings/bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/linig.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Ambar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Ambar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cottage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cottage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Fountain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Fountain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/NewBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/NewBuilding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shelter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Temple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Temple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/ambar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/cottage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/fountain.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/shelter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/shop.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/temple.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/11.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +69,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/nasav/OneDrive/Документы/Учёба/МГТУ/Семестр 2/GUI apps/tiny_towns",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="tiny_towns" />
@@ -97,7 +120,10 @@
       <workItem from="1683920914299" duration="11852000" />
       <workItem from="1684096025904" duration="8245000" />
       <workItem from="1684444640179" duration="391000" />
-      <workItem from="1684483806638" duration="1445000" />
+      <workItem from="1684483806638" duration="1768000" />
+      <workItem from="1684520104093" duration="6530000" />
+      <workItem from="1684780446369" duration="14000" />
+      <workItem from="1684787212953" duration="5824000" />
     </task>
     <task id="LOCAL-00001" summary="starting a project">
       <created>1683141567955</created>
@@ -134,7 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684444892597</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Больше текстурой домиков">
+      <created>1684490582642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684490582642</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Больше текстурой домиков">
+      <created>1684490728549</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684490728549</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +198,8 @@
     <MESSAGE value="Пока создал наброски поля. Всё еще не уверен, как будет выглядеть игра, так что сцена в оконном формате. Добавил кликабельное поле, на котором загораются квадраты." />
     <MESSAGE value="Добавил текстуры ресурсов, анимированный фон. Дописал логику раставления ресурсов на карте. Написал набросок класса здания с методом проверки" />
     <MESSAGE value="Добавил Никитины классы домиков" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил Никитины классы домиков" />
+    <MESSAGE value="Больше текстурой домиков" />
+    <option name="LAST_COMMIT_MESSAGE" value="Больше текстурой домиков" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GUI_final_project$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1683644532189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

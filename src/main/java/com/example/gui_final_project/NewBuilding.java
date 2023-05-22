@@ -1,17 +1,25 @@
 package com.example.gui_final_project;
 
+import javafx.scene.image.Image;
 import org.jgrapht.*;
 import org.jgrapht.graph.*;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public abstract class NewBuilding {
     protected DefaultUndirectedGraph<Integer, DefaultEdge> model;
+    protected int res_id;
+    protected Image Building_image;
 
-    public NewBuilding() {
+
+    public NewBuilding() throws FileNotFoundException {
         model = new DefaultUndirectedGraph<>(DefaultEdge.class);
+
     }
 
-    public abstract void createModel();
+    public abstract void createModel() throws FileNotFoundException;
 
     public boolean compareGraph(ArrayList<Cell> cellsToCheck) {
         DefaultUndirectedGraph<Integer, DefaultEdge> graphToCheck = new DefaultUndirectedGraph<>(DefaultEdge.class);
@@ -39,5 +47,13 @@ public abstract class NewBuilding {
 
         return graphsAreEqual;
 
+    }
+
+    public Image getBuilding_image() {
+        return Building_image;
+    }
+
+    public int getRes_id() {
+        return res_id;
     }
 }
