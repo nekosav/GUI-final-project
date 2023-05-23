@@ -27,7 +27,7 @@
             <Image url="@textures/wave_frame1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="500.0" fitWidth="800.0">
+      <ImageView fitHeight="529.0" fitWidth="814.0">
          <image>
             <Image url="@textures/resource_board_2.png" />
          </image>
@@ -157,7 +157,7 @@
             <Image url="@textures/buildings/fountain.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="cottage_view" fitHeight="100.0" fitWidth="100.0" layoutX="450.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="cottage_view" fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="286.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/cottage.png" />
          </image>
@@ -177,7 +177,7 @@
             <Image url="@textures/buildings/shop.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="shelter_view" fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="shelter_view" fitHeight="100.0" fitWidth="100.0" layoutX="450.0" layoutY="286.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/shelter.png" />
          </image>
@@ -185,6 +185,41 @@
       <ImageView fx:id="bank_view" fitHeight="100.0" fitWidth="100.0" layoutX="650.0" layoutY="286.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/bank.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fountain_view1" fitHeight="100.0" fitWidth="100.0" layoutX="550.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+         <image>
+            <Image url="@textures/building_buttons/fountain.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cottage_view1" fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+         <image>
+            <Image url="@textures/building_buttons/cottage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ambar_view1" fitHeight="100.0" fitWidth="100.0" layoutX="350.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+         <image>
+            <Image url="@textures/building_buttons/ambar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="temple_view1" fitHeight="100.0" fitWidth="100.0" layoutX="250.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+         <image>
+            <Image url="@textures/building_buttons/temple.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shop_view1" fitHeight="100.0" fitWidth="100.0" layoutX="150.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+         <image>
+            <Image url="@textures/building_buttons/shop.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shelter_view1" fitHeight="100.0" fitWidth="100.0" layoutX="450.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+         <image>
+            <Image url="@textures/building_buttons/shelter.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bank_view1" fitHeight="100.0" fitWidth="100.0" layoutX="650.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+         <image>
+            <Image url="@textures/building_buttons/bank.png" />
          </image>
       </ImageView>
    </children>
