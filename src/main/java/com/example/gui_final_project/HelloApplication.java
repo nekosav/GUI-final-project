@@ -15,6 +15,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Playground1.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1920, 1080);
+        //TODO Спиздить у Севы нормальный полноэкранный режим
 //        stage.setMaxHeight(1080);
 //        stage.setMaxWidth(1920);
         stage.setFullScreen(true);
