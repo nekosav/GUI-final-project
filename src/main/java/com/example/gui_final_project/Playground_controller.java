@@ -159,6 +159,7 @@ public class Playground_controller  {
                     buildings.get(building_num).count_points(score,selected_tiles_cord.get(0).x, selected_tiles_cord.get(0).y, resources.getRes_cords() ); //подсчитываем очки
                     score_label.setText(Integer.toString(score.getCount())); //записываем очки в надпись
                     ImageView selected_res_cub = (ImageView) cell_pane.getChildren().get(1);
+                    selected_res_cub.setImage(selected_tile_image);
                     selected_res_cub.setVisible(false);
                     selected_tiles_cord.remove(0);
                     for (int i=0; i<selected_tiles_cord.size(); i++){
@@ -383,6 +384,7 @@ public class Playground_controller  {
         score_label.setText(Integer.toString(score.getCount()));
         finish_menu_pane.toBack();
         menu_pane.toBack();
+        unselect();
     }
     public void exit(){
         System.exit(0);
