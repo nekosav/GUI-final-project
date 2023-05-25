@@ -12,6 +12,124 @@
 
 <Pane fx:id="background_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_final_project.Playground_controller">
    <children>
+      <ImageView fx:id="boarder" fitHeight="353.0" fitWidth="202.0" layoutX="316.0" layoutY="672.0">
+         <image>
+            <Image url="@textures/boarder.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="info_image_big" fitHeight="451.0" fitWidth="196.0" layoutX="319.0" layoutY="674.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textures/Cards/Ambar.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="finish_menu_pane" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <ImageView fitHeight="545.0" fitWidth="695.0" layoutX="613.0" layoutY="268.0">
+               <image>
+                  <Image url="@textures/text_background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="166.0" layoutX="980.0" layoutY="329.0">
+               <image>
+                  <Image url="@textures/label_background.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="656.0" layoutY="329.0">
+               <image>
+                  <Image url="@textures/label_background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="839.0" layoutY="329.0">
+               <image>
+                  <Image url="@textures/button_back.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tc_label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="656.0" layoutY="329.0" prefHeight="100.0" prefWidth="160.0" text="Total count" textAlignment="CENTER" textFill="#90625d" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="etf_label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="983.0" layoutY="329.0" prefHeight="100.0" prefWidth="160.0" text="Empty tiles fine" textAlignment="CENTER" textFill="#90625d" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1166.0" layoutY="329.0">
+               <image>
+                  <Image url="@textures/button_back.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="367.0" fitWidth="150.0" layoutX="885.0" layoutY="347.0" rotate="90.0">
+               <image>
+                  <Image url="@textures/card_boarder.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="367.0" fitWidth="150.0" layoutX="885.0" layoutY="522.0" rotate="90.0">
+               <image>
+                  <Image url="@textures/card_boarder.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="restart_label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="777.0" layoutY="456.0" onMouseClicked="#Restart" prefHeight="150.0" prefWidth="367.0" text="Restart" textAlignment="CENTER" textFill="#90625d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="exit_label_2" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="777.0" layoutY="631.0" onMouseClicked="#exit" prefHeight="150.0" prefWidth="367.0" text="Exit" textAlignment="CENTER" textFill="#90625d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="total_count_label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="839.0" layoutY="329.0" prefHeight="100.0" prefWidth="100.0" textAlignment="CENTER" textFill="#90625d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="empty_tiles_label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="1166.0" layoutY="329.0" prefHeight="100.0" prefWidth="100.0" textAlignment="CENTER" textFill="#90625d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="menu_pane" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <ImageView fitHeight="545.0" fitWidth="695.0" layoutX="613.0" layoutY="268.0">
+               <image>
+                  <Image url="@textures/text_background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="367.0" fitWidth="150.0" layoutX="885.0" layoutY="190.0" rotate="90.0">
+               <image>
+                  <Image url="@textures/card_boarder.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="367.0" fitWidth="150.0" layoutX="885.0" layoutY="357.0" rotate="90.0">
+               <image>
+                  <Image url="@textures/card_boarder.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="367.0" fitWidth="150.0" layoutX="886.0" layoutY="524.0" rotate="90.0">
+               <image>
+                  <Image url="@textures/card_boarder.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="resume_label" alignment="CENTER" layoutX="773.0" layoutY="302.0" onMouseClicked="#resume" prefHeight="144.0" prefWidth="367.0" text="Resume" textFill="#90625d">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label fx:id="game_over_label" alignment="CENTER" layoutX="773.0" layoutY="468.0" onMouseClicked="#finish" prefHeight="144.0" prefWidth="367.0" text="Finish" textFill="#90625d">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label fx:id="exit_label" alignment="CENTER" layoutX="778.0" layoutY="636.0" onMouseClicked="#exit" prefHeight="144.0" prefWidth="367.0" text="Exit" textFill="#90625d">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
       <ImageView fx:id="waves_fr2" fitHeight="1380.0" fitWidth="1920.0" visible="false">
          <image>
             <Image url="@textures/wave_frame2.png" />
@@ -27,7 +145,7 @@
             <Image url="@textures/wave_frame1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="529.0" fitWidth="814.0">
+      <ImageView fitHeight="1070.0" fitWidth="814.0">
          <image>
             <Image url="@textures/resource_board_2.png" />
          </image>
@@ -152,75 +270,155 @@
             <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Label>
-      <ImageView fx:id="fountain_view" fitHeight="100.0" fitWidth="100.0" layoutX="550.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="fountain_view" fitHeight="100.0" fitWidth="100.0" layoutX="590.0" layoutY="297.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/fountain.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="cottage_view" fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="cottage_view" fitHeight="100.0" fitWidth="100.0" layoutX="90.0" layoutY="297.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/cottage.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="ambar_view" fitHeight="100.0" fitWidth="100.0" layoutX="350.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="ambar_view" fitHeight="100.0" fitWidth="100.0" layoutX="390.0" layoutY="297.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/ambar.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="temple_view" fitHeight="100.0" fitWidth="100.0" layoutX="250.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="temple_view" fitHeight="100.0" fitWidth="100.0" layoutX="290.0" layoutY="297.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/temple.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="shop_view" fitHeight="100.0" fitWidth="100.0" layoutX="150.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="shop_view" fitHeight="100.0" fitWidth="100.0" layoutX="190.0" layoutY="297.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/shop.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="shelter_view" fitHeight="100.0" fitWidth="100.0" layoutX="450.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="shelter_view" fitHeight="100.0" fitWidth="100.0" layoutX="490.0" layoutY="297.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/buildings/shelter.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="bank_view" fitHeight="100.0" fitWidth="100.0" layoutX="650.0" layoutY="286.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="bank_view" fitHeight="100.0" fitWidth="100.0" layoutX="40.0" layoutY="574.0" onMouseClicked="#click_building_picker" visible="false">
          <image>
             <Image url="@textures/buildings/bank.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fountain_view1" fitHeight="100.0" fitWidth="100.0" layoutX="550.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="fountain_view1" fitHeight="100.0" fitWidth="100.0" layoutX="590.0" layoutY="397.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/building_buttons/fountain.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="cottage_view1" fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="cottage_view1" fitHeight="100.0" fitWidth="100.0" layoutX="90.0" layoutY="397.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/building_buttons/cottage.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="ambar_view1" fitHeight="100.0" fitWidth="100.0" layoutX="350.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="ambar_view1" fitHeight="100.0" fitWidth="100.0" layoutX="390.0" layoutY="397.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/building_buttons/ambar.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="temple_view1" fitHeight="100.0" fitWidth="100.0" layoutX="250.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="temple_view1" fitHeight="100.0" fitWidth="100.0" layoutX="290.0" layoutY="397.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/building_buttons/temple.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="shop_view1" fitHeight="100.0" fitWidth="100.0" layoutX="150.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="shop_view1" fitHeight="100.0" fitWidth="100.0" layoutX="190.0" layoutY="397.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/building_buttons/shop.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="shelter_view1" fitHeight="100.0" fitWidth="100.0" layoutX="450.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="shelter_view1" fitHeight="100.0" fitWidth="100.0" layoutX="490.0" layoutY="397.0" onMouseClicked="#click_building_picker">
          <image>
             <Image url="@textures/building_buttons/shelter.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="bank_view1" fitHeight="100.0" fitWidth="100.0" layoutX="650.0" layoutY="386.0" onMouseClicked="#click_building_picker">
+      <ImageView fx:id="bank_view1" fitHeight="100.0" fitWidth="100.0" layoutX="140.0" layoutY="574.0" onMouseClicked="#click_building_picker" visible="false">
          <image>
             <Image url="@textures/building_buttons/bank.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1681.0" layoutY="48.0">
+         <image>
+            <Image url="@textures/button_back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score_label" alignment="CENTER" layoutX="1685.0" layoutY="48.0" prefHeight="100.0" prefWidth="100.0" text="0" textFill="#90625d" wrapText="true">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="122.0" layoutY="504.0">
+         <image>
+            <Image url="@textures/info_button.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="222.0" layoutY="504.0">
+         <image>
+            <Image url="@textures/info_button.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="322.0" layoutY="504.0">
+         <image>
+            <Image url="@textures/info_button.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="422.0" layoutY="504.0">
+         <image>
+            <Image url="@textures/info_button.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="522.0" layoutY="504.0">
+         <image>
+            <Image url="@textures/info_button.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="622.0" layoutY="504.0">
+         <image>
+            <Image url="@textures/info_button.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="cottage_info" alignment="CENTER" layoutX="122.0" layoutY="504.0" minHeight="36.0" minWidth="36.0" onMousePressed="#click_info" onMouseReleased="#hide_info" text="i" textFill="#90625d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="shop_info" alignment="CENTER" layoutX="222.0" layoutY="504.0" minHeight="36.0" minWidth="36.0" onMousePressed="#click_info" onMouseReleased="#hide_info" text="i" textFill="#90625d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="temple_info" alignment="CENTER" layoutX="322.0" layoutY="504.0" minHeight="36.0" minWidth="36.0" onMousePressed="#click_info" onMouseReleased="#hide_info" text="i" textFill="#90625d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="ambar_info" alignment="CENTER" layoutX="422.0" layoutY="504.0" minHeight="36.0" minWidth="36.0" onMousePressed="#click_info" onMouseReleased="#hide_info" text="i" textFill="#90625d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="shelter_info" alignment="CENTER" layoutX="522.0" layoutY="504.0" minHeight="36.0" minWidth="36.0" onMousePressed="#click_info" onMouseReleased="#hide_info" text="i" textFill="#90625d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="fountain_info" alignment="CENTER" layoutX="622.0" layoutY="504.0" minHeight="36.0" minWidth="36.0" onMousePressed="#click_info" onMouseReleased="#hide_info" text="i" textFill="#90625d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1806.0" layoutY="48.0">
+         <image>
+            <Image url="@textures/button_back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="pause_label" alignment="CENTER" layoutX="1811.0" layoutY="48.0" minHeight="100.0" minWidth="100.0" onMouseClicked="#pause" text="||" textFill="#90625d">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

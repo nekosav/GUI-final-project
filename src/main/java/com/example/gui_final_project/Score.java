@@ -49,13 +49,13 @@ public class Score {
         }
     }
     public void addAmb(int x, int y, int[][]cords){ // id кота 12 id амбара 13
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
                 if (((Math.abs(x-i)==1) & (Math.abs(y-j)==1)) | (Math.abs(i-x)+Math.abs(j-y)==1)){
                     if (cords[i][j] == 12){
                         int amC = 0;
-                        for (int d = 0; d < 3; d++) {
-                            for (int f = 0; f < 3; f++) {
+                        for (int d = 0; d < 4; d++) {
+                            for (int f = 0; f < 4; f++) {
                                 if (((Math.abs(d-i)==1) & (Math.abs(f-j)==1))
                                         | (Math.abs(i-d)+Math.abs(j-f)==1)){
                                     if (cords[d][f] == 13){
@@ -88,34 +88,25 @@ public class Score {
         }
     }
 
-    public void addTemp(int x, int y, int[][]cords){ // id храма 14 id кота 12 id амбара 13
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                if ((Math.abs(i - x) + Math.abs(j - y) == 1)) {
-                    if (cords[i][j] == 12){
-                        int coolCot = 0;
-                        out: for (int d=0; d<4; d++){
-                            for (int f=0; f<4; f++){
-                                if (((Math.abs(d-i)==1) & (Math.abs(d-j)==1))
-                                        | (Math.abs(i-f)+Math.abs(j-f)==1)){
-                                    if (cords[i][j] == 13){
-                                        coolCot++;
-                                        break out;
-                                    }
-                                }
-                            }
-                        }
-                        if (coolCot >= 2){
-                            count+=4;
-                        }
-                    }
-                }
-            }
+    void addTemp(int x, int y, int[][] cords){ // id храма 14 id кота 12 id амбара 13
+        if (x == 0 & y == 0){
+            count++;
+        }
+        if (x == 3 & y == 3){
+            count++;
+        }
+        if (x == 0 & y == 3){
+            count++;
+        }
+        if (x == 3 & y == 0){
+            count++;
         }
     }
 
-    public void addInn(int x, int y, int[][]cords) { // id 15
+    public void addShelter(int x, int y, int[][]cords) { // id 15
         int innC = 0;
+
+
         for (int i = 0; i < 4; i++){
             for (int j = 0; j < 4; j++){
                 if (cords[i][j] == 15){
