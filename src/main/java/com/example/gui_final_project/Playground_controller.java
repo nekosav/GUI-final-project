@@ -9,9 +9,15 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 
+
+
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
+import javafx.scene.transform.Scale;
 
+import javax.print.attribute.standard.Media;
+
+import java.awt.*;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -28,17 +34,25 @@ public class Playground_controller  {
     @FXML
     private GridPane playground;//поле 8*8
     @FXML
-    private Pane background_pane;//основная Pane
+    private Pane background_pane, menu_pane, finish_menu_pane;//основная Pane
     @FXML
     private Button block0, block1, block2;
     @FXML
-    private Label label1,label2;
+    private Label label1,label2,score_label,pause_label, resume_label, game_over_label, exit_label, exit_label_2, restart_label, etf_label, tc_label, total_count_label, empty_tiles_label;
     @FXML
     private ImageView bank_view, ambar_view, cottage_view, shelter_view, fountain_view, shop_view, temple_view;
+
+    @FXML
+    private Label ambar_info, cottage_info, shelter_info, fountain_info, shop_info, temple_info;
+
+    @FXML
+    private ImageView info_image_big, boarder;
 
 
     private ArrayList<ImageView> building_pickers = new ArrayList<>();
     private ArrayList<NewBuilding> buildings = new ArrayList<>();
+
+    private ArrayList<Label> building_info = new ArrayList<>();
 
     private int[] b_res_num ={0,0,0}; //номер ресурса в кнопке
 
@@ -48,7 +62,15 @@ public class Playground_controller  {
 
     private final Font  customFont = Font.loadFont("file:src/main/resources/com/example/gui_final_project/font/big-shot.ttf",24);
 
+    private final Font score_font = Font.loadFont("file:src/main/resources/com/example/gui_final_project/font/big-shot.ttf",60);
+
+    private final Font menu_font =  Font.loadFont("file:src/main/resources/com/example/gui_final_project/font/big-shot.ttf",48);
+
     private final Image selected_tile_image = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/selected_tile.png"));
+    private final Image first_selected_tile_image = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/first_selected.png"));
+
+    private Score score = new Score();
+
 
 
 
@@ -68,17 +90,38 @@ public class Playground_controller  {
     @FXML
     public void initialize() throws FileNotFoundException {
 
-        if (!(customFont.equals(null) )){
-            label1.setFont(customFont);
-            label2.setFont(customFont);
-        }
+
+
+        Dimension resolution = Toolkit.getDefaultToolkit().getScreenSize();
+        Scale scale = new Scale(resolution.getWidth()/1920, resolution.getHeight()/1080, 0, 0);
+        background_pane.getTransforms().add(scale);
+
+        label1.setFont(customFont);
+        label2.setFont(customFont);
+
+        score_label.setFont(score_font);
+        pause_label.setFont(score_font);
+
+        resume_label.setFont(customFont);
+        game_over_label.setFont(customFont);
+        exit_label.setFont(customFont);
+
+        exit_label_2.setFont(customFont);
+        restart_label.setFont(customFont);
+        etf_label.setFont(customFont);
+        tc_label.setFont(customFont);
+        total_count_label.setFont(customFont);
+        empty_tiles_label.setFont(customFont);
+
         background_pane.setOnMouseClicked(this::unselect_all_tiles_pane);
 
         Set_buttons_params();
         Draw_playground();
         Set_background();
-        building_pickers.addAll(List.of(ambar_view, bank_view, cottage_view, fountain_view, shelter_view, shop_view, temple_view));
-        buildings.addAll(List.of(new Ambar(),new Bank(), new Cottage(), new Fountain(), new Shelter(), new Shop(), new Temple()));
+        building_pickers.addAll(List.of(ambar_view, cottage_view, fountain_view, shelter_view, shop_view, temple_view)); //важно, чтоб порядок
+        buildings.addAll(List.of(new Ambar(), new Cottage(), new Fountain(), new Shelter(), new Shop(), new Temple()));  //в этих трех массивах
+        building_info.addAll(List.of(ambar_info,cottage_info,fountain_info,shelter_info,shop_info,temple_info));         //был одинаковый
+        for (Label l : building_info){ l.setFont(customFont);}
     }
 
     @FXML
@@ -105,14 +148,16 @@ public class Playground_controller  {
 
         for (ImageView image : building_pickers){
 
-            if (res_picker == image){
-                int building_num = building_pickers.indexOf(image);
-                if (buildings.get(building_num).compareGraph(selected_tiles_cord)) {
-                    System.out.println("Ебать дом, ахуеть");
+            if (res_picker == image){ //определяем на какое здание кликнули
+                int building_num = building_pickers.indexOf(image); //записываем этот номер (!!! этот номер не свзяан с номеров в массиве координат)
+                if (buildings.get(building_num).compareGraph(selected_tiles_cord)) { //проверка на соответствие схеме
+
                     Pane cell_pane = getPaneByCell(selected_tiles_cord.get(0).x, selected_tiles_cord.get(0).y );
                     ImageView resource_cube = (ImageView) cell_pane.getChildren().get(0);
                     resource_cube.setImage(buildings.get(building_num).getBuilding_image());
-                    resources.getRes_cords()[selected_tiles_cord.get(0).x][selected_tiles_cord.get(0).y] = buildings.get(building_num).getRes_id();
+                    resources.getRes_cords()[selected_tiles_cord.get(0).x][selected_tiles_cord.get(0).y] = buildings.get(building_num).getRes_id(); //записываем id в координаты
+                    buildings.get(building_num).count_points(score,selected_tiles_cord.get(0).x, selected_tiles_cord.get(0).y, resources.getRes_cords() ); //подсчитываем очки
+                    score_label.setText(Integer.toString(score.getCount())); //записываем очки в надпись
                     ImageView selected_res_cub = (ImageView) cell_pane.getChildren().get(1);
                     selected_res_cub.setVisible(false);
                     selected_tiles_cord.remove(0);
@@ -174,6 +219,9 @@ public class Playground_controller  {
                 }
             }
             if (flag) {
+                if (selected_tiles_cord.size()==0){
+                    selected_tile.setImage(first_selected_tile_image);
+                }
                 selected_tiles_cord.add(cell);
                 selected_tile.setVisible(true);
             }
@@ -270,6 +318,7 @@ public class Playground_controller  {
 
                 Pane cell_pane_1 = getPaneByCell(cell.x, cell.y);
                 ImageView selected_tile_1 = (ImageView) cell_pane_1.getChildren().get(1);
+                selected_tile_1.setImage(selected_tile_image);
                 selected_tile_1.setVisible(false);
 
             }
@@ -278,5 +327,65 @@ public class Playground_controller  {
             }
     }
 
+
+    public void click_info(MouseEvent mouseEvent){
+        Label clicked_label = (Label) mouseEvent.getSource();
+        for (Label label : building_info){
+            if (label == clicked_label){
+                int label_num = building_info.indexOf(label);
+                info_image_big.setImage(buildings.get(label_num).getInfo_image());
+                info_image_big.toFront();
+                boarder.toFront();
+            }
+        }
+    }
+
+    public void hide_info(MouseEvent mouseEvent){
+        info_image_big.toBack();
+        boarder.toBack();
+    }
+
+    public void pause(){
+        menu_pane.toFront();
+    }
+
+    public void resume(){
+        menu_pane.toBack();
+    }
+
+    public void finish(){
+        finish_menu_pane.toFront();
+        score.gameOver(resources.getRes_cords());
+        total_count_label.setText(Integer.toString(score.getCount()));
+        int empt_count = 0;
+        for (int i=0; i<4; i++){
+            for (int j=0; j<4; j++){
+                if (resources.getRes_cords()[i][j] <10){
+                    empt_count +=1;
+                }
+            }
+        }
+        empt_count *=-1;
+        empty_tiles_label.setText(Integer.toString(empt_count));
+    }
+
+    public void Restart() throws FileNotFoundException {
+        for (int i =0; i<4; i++){
+            for (int j=0; j<4; j++){
+                resources.setRes_cords(i,j,-1);
+                ImageView tile = (ImageView) getPaneByCell(i,j).getChildren().get(0);
+                tile.setVisible(false);
+            }
+        }
+        score = new Score();
+        resources = new Resources();
+        Set_buttons_params();
+        score_label.setText(Integer.toString(score.getCount()));
+        finish_menu_pane.toBack();
+        menu_pane.toBack();
+    }
+    public void exit(){
+        System.exit(0);
+    }
 
 }

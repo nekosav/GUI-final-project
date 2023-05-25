@@ -11,8 +11,9 @@ public class Ambar extends NewBuilding {
     public Ambar() throws FileNotFoundException {
         super();
         createModel();
-        res_id = 5;
-        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/" + res_id +".png"));
+        res_id = 13;
+        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/ambar.png"));
+        this.info_image = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/Cards/Ambar.png"));
     }
 
     @Override
@@ -29,5 +30,9 @@ public class Ambar extends NewBuilding {
         model.addEdge(colors[2],colors[3]);
 
 
+    }
+    @Override
+    public void count_points(Score score, int x, int y, int[][] cords){
+        score.addAmb(x,y,cords);
     }
 }

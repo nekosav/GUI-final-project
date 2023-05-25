@@ -13,6 +13,11 @@ public abstract class NewBuilding {
     protected int res_id;
     protected Image Building_image;
 
+    protected Image info_image;
+
+    protected String description;
+
+
 
     public NewBuilding() throws FileNotFoundException {
         model = new DefaultUndirectedGraph<>(DefaultEdge.class);
@@ -56,5 +61,16 @@ public abstract class NewBuilding {
 
     public int getRes_id() {
         return res_id;
+    }
+
+    public Image getInfo_image(){ return info_image;}
+
+
+    public void count_points(Score score, int x, int y, int[][] cords){
+        score.addShelter(x,y,cords);
+    }
+
+    public String getDescription() {
+        return description;
     }
 }

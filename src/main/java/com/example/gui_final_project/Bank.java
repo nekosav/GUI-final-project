@@ -12,7 +12,7 @@ public class Bank extends NewBuilding {
         super();
         createModel();
         res_id = 6;
-        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/" + res_id +".png"));
+        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/bank.png"));
     }
 
     @Override

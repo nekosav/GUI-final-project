@@ -10,8 +10,9 @@ public class Cottage extends NewBuilding {
     public Cottage() throws FileNotFoundException {
         super();
         createModel();
-        res_id = 7;
-        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/" + res_id +".png"));
+        res_id = 12;
+        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/cottage.png"));
+        this.info_image = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/Cards/Cottage.png"));
     }
 
     @Override
@@ -24,5 +25,10 @@ public class Cottage extends NewBuilding {
 
         model.addEdge(colors[0],colors[1]);
         model.addEdge(colors[1],colors[2]);
+    }
+
+    @Override
+    public void count_points(Score score, int x, int y, int[][] cords){
+        score.addCot(x,y,cords);
     }
 }

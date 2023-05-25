@@ -10,8 +10,9 @@ public class Fountain extends NewBuilding {
     public Fountain() throws FileNotFoundException {
         super();
         createModel();
-        res_id = 8;
-        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/" + res_id +".png"));
+        res_id = 11;
+        this.Building_image =  new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/buildings_tiles/fountain.png"));
+        this.info_image = new Image(new FileInputStream("src/main/resources/com/example/gui_final_project/textures/Cards/Fountain.png"));
     }
 
     @Override
@@ -24,5 +25,10 @@ public class Fountain extends NewBuilding {
 
         model.addEdge(colors[0],colors[1]);
 
+    }
+
+    @Override
+    public void count_points(Score score, int x, int y, int[][] cords){
+        score.addFontain(x,y,cords);
     }
 }
