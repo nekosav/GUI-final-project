@@ -4,53 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Добавил схемы домиков">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/music/building_placing.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/music/button_click.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/music/fon_music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Cards/Ambar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Cards/Cottage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Cards/Fountain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Cards/Inn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Cards/Market.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/Cards/Temple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/boarder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/ambar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/bank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/cottage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/fountain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/shelter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/shop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/temple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/button_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/card_boarder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/first_selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/info_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/res_board.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/text_background.png" afterDir="false" />
+    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Закончил проект. Добавил менюшки, карточки, переписал пару классов, исправил и добавил несколько текстурок">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Ambar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Ambar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cottage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Cottage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Fountain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Fountain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/NewBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/NewBuilding.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shelter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Temple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Temple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/Playground1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/building_buttons/temple.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/building_buttons/temple.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/buildings_tiles/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resource_board_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gui_final_project/textures/resource_board_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,11 +62,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/nasav/OneDrive/Документы/Учёба/МГТУ/Семестр 2/GUI apps/tiny_towns",
+    "last_opened_file_path": "C:/Users/nasav/.m2/repository/org/openjfx/javafx-media/19-ea+7/javafx-media-19-ea+7.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.52873564",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
   <component name="RunManager">
@@ -150,6 +109,8 @@
       <workItem from="1684873359779" duration="2645000" />
       <workItem from="1684942421060" duration="18495000" />
       <workItem from="1684970528444" duration="8318000" />
+      <workItem from="1684979837333" duration="268000" />
+      <workItem from="1685000302011" duration="3468000" />
     </task>
     <task id="LOCAL-00001" summary="starting a project">
       <created>1683141567955</created>
@@ -221,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684878685365</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Закончил проект. Добавил менюшки, карточки, переписал пару классов, исправил и добавил несколько текстурок">
+      <created>1684979949040</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684979949041</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +216,8 @@
     <MESSAGE value="Больше текстурой домиков" />
     <MESSAGE value="Теперь можно создавать домики" />
     <MESSAGE value="Добавил схемы домиков" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил схемы домиков" />
+    <MESSAGE value="Закончил проект. Добавил менюшки, карточки, переписал пару классов, исправил и добавил несколько текстурок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Закончил проект. Добавил менюшки, карточки, переписал пару классов, исправил и добавил несколько текстурок" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GUI_final_project$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1683644532189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

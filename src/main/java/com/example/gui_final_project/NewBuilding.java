@@ -27,7 +27,7 @@ public abstract class NewBuilding {
     public abstract void createModel() throws FileNotFoundException;
 
     public boolean compareGraph(ArrayList<Cell> cellsToCheck) {
-        //TODO сделать возможной реализацю доп проверок
+
         DefaultUndirectedGraph<Integer, DefaultEdge> graphToCheck = new DefaultUndirectedGraph<>(DefaultEdge.class);
         boolean graphsAreEqual = true;
 
