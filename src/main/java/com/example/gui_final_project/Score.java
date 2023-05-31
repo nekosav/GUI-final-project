@@ -3,6 +3,8 @@ package com.example.gui_final_project;
 public class Score {
     private int count = 0;
 
+    private int corner_temple_count =0;
+
     public int getCount() {
         return count;
     }
@@ -83,24 +85,18 @@ public class Score {
                 marketCountC++;
             }
         }
-        if (Math.max(marketCountR, marketCountC) != 1) {
-            count += 1;
-        }
+
+        count+=Math.max(marketCountR,marketCountC)*2-1;
+
     }
 
     void addTemp(int x, int y, int[][] cords){ // id храма 14 id кота 12 id амбара 13
-        if (x == 0 & y == 0){
-            count++;
+
+        if (((x==0) | (x==cords.length -1)) & ((y==0) | (y==cords.length-1))){
+            corner_temple_count+=1;
+            count += corner_temple_count*2 -1;
         }
-        if (x == 3 & y == 3){
-            count++;
-        }
-        if (x == 0 & y == 3){
-            count++;
-        }
-        if (x == 3 & y == 0){
-            count++;
-        }
+        else { count += corner_temple_count;}
     }
 
     public void addShelter(int x, int y, int[][]cords) { // id 15

@@ -33,7 +33,7 @@ public class Resources {
 
     public Image[] getResources_tiles_options() {return resources_tiles_options;}
 
-    private ArrayList<Integer> resources_deck = new ArrayList<>(); //колода ресурсов, из которой назначаются кнопки
+    public ArrayList<Integer> resources_deck = new ArrayList<>(); //колода ресурсов, из которой назначаются кнопки
 
     private int[][] res_cords = new int[4][4]; // карта ресурсов
 
