@@ -96,23 +96,7 @@ public class Playground_controller  {
         Scale scale = new Scale(resolution.getWidth()/1920, resolution.getHeight()/1080, 0, 0);
         background_pane.getTransforms().add(scale);
 
-        label1.setFont(customFont);
-        label2.setFont(customFont);
-
-        score_label.setFont(score_font);
-        pause_label.setFont(score_font);
-
-        resume_label.setFont(customFont);
-        game_over_label.setFont(customFont);
-        exit_label.setFont(customFont);
-
-        exit_label_2.setFont(customFont);
-        restart_label.setFont(customFont);
-        etf_label.setFont(customFont);
-        tc_label.setFont(customFont);
-        total_count_label.setFont(customFont);
-        empty_tiles_label.setFont(customFont);
-
+        set_fonts();
         background_pane.setOnMouseClicked(this::unselect_all_tiles_pane);
 
         Set_buttons_params();
@@ -191,7 +175,9 @@ public class Playground_controller  {
                 resource_cube.setImage(resources.getResources_tiles_options()[picked_res_num]);
                 resources.setRes_cords(row, column, picked_res_num); // добавляем ресурс в карту ресурсов
                 System.out.println("Вы поставили ресурс:" + resources.getRes_cords()[row][column]);
-                b_res_num[b_picked_num] = resources.getFirstResource();
+                resources.resources_deck.add(b_res_num[b_picked_num]);
+                b_res_num[b_picked_num] =resources.resources_deck.get(0);
+                resources.resources_deck.remove(0);
                 switch (b_picked_num) {
                     case 0:
                         block0.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[0]]));
@@ -255,9 +241,13 @@ public class Playground_controller  {
     }
     private void Set_buttons_params(){
         //выбор начальных 3-х ресурсов
-        b_res_num[0] = resources.getFirstResource();
-        b_res_num[1] = resources.getFirstResource();
-        b_res_num[2] = resources.getFirstResource();
+//        b_res_num[0] = resources.getFirstResource();
+//        b_res_num[1] = resources.getFirstResource();
+//        b_res_num[2] = resources.getFirstResource();
+        for (int i=0; i<3; i++){
+            b_res_num[i] =resources.resources_deck.get(0);
+            resources.resources_deck.remove(0);
+        }
         block0.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[0]]));
         block1.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[1]]));
         block2.graphicProperty().setValue(new ImageView(resources.getResources_options()[b_res_num[2]]));
@@ -388,6 +378,26 @@ public class Playground_controller  {
     }
     public void exit(){
         System.exit(0);
+    }
+
+    void set_fonts(){
+
+        label1.setFont(customFont);
+        label2.setFont(customFont);
+
+        score_label.setFont(score_font);
+        pause_label.setFont(score_font);
+
+        resume_label.setFont(customFont);
+        game_over_label.setFont(customFont);
+        exit_label.setFont(customFont);
+
+        exit_label_2.setFont(customFont);
+        restart_label.setFont(customFont);
+        etf_label.setFont(customFont);
+        tc_label.setFont(customFont);
+        total_count_label.setFont(customFont);
+        empty_tiles_label.setFont(customFont);
     }
 
 }

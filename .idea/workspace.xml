@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Закончил проект. Добавил менюшки, карточки, переписал пару классов, исправил и добавил несколько текстурок">
+    <list default="true" id="3d4e6805-602b-4e4b-afcd-846a22e22283" name="Changes" comment="Пофиксил выделение">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/NewBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/NewBuilding.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Playground_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Resources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gui_final_project/Score.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,24 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/nasav/.m2/repository/org/openjfx/javafx-media/19-ea+7/javafx-media-19-ea+7.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.52873564",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasav/.m2/repository/org/openjfx/javafx-media/19-ea+7/javafx-media-19-ea+7.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.52873564&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="tiny_towns" />
@@ -110,7 +109,11 @@
       <workItem from="1684942421060" duration="18495000" />
       <workItem from="1684970528444" duration="8318000" />
       <workItem from="1684979837333" duration="268000" />
-      <workItem from="1685000302011" duration="3468000" />
+      <workItem from="1685000302011" duration="5488000" />
+      <workItem from="1685017746368" duration="1501000" />
+      <workItem from="1685130462992" duration="5471000" />
+      <workItem from="1685198321138" duration="649000" />
+      <workItem from="1685288426663" duration="1806000" />
     </task>
     <task id="LOCAL-00001" summary="starting a project">
       <created>1683141567955</created>
@@ -189,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684979949041</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Пофиксил выделение">
+      <created>1685013694153</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685013694153</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +227,8 @@
     <MESSAGE value="Теперь можно создавать домики" />
     <MESSAGE value="Добавил схемы домиков" />
     <MESSAGE value="Закончил проект. Добавил менюшки, карточки, переписал пару классов, исправил и добавил несколько текстурок" />
-    <option name="LAST_COMMIT_MESSAGE" value="Закончил проект. Добавил менюшки, карточки, переписал пару классов, исправил и добавил несколько текстурок" />
+    <MESSAGE value="Пофиксил выделение" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пофиксил выделение" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GUI_final_project$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1683644532189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
